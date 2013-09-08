@@ -1,0 +1,215 @@
+@import "../bower_components/bootstrap/less/variables.less";
+@import "../bower_components/bootstrap/less/mixins.less";
+@syntax-back: #272821;
+
+
+article .gist { 
+    color: #000;
+    font-size: 16px;
+}
+article .gist h1,h2,h3,h4,h5 {font-size: 25px;}
+article .gist .render-container .render-viewer-error,
+.gist .render-container .render-viewer-fatal,
+.gist .render-container .octospinner { display: none }
+.gist .gist-render iframe { width: 100% }
+article .gist pre {
+    background-color: @syntax-back;
+    font: inherit;
+    line-height: inherit;
+    white-space: pre;
+}
+article .gist .gist-file {
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: inherit;
+    margin-bottom: 1em;
+}
+article .gist .gist-file.gist-render { border: none }
+article .gist .gist-file .gist-meta {
+    font: 12px "Helvetica Neue", Helvetica, arial, freesans, clean, sans-serif;
+    text-shadow: 1px 1px rgba(255,255,255,0.8);
+    overflow: hidden;
+    color: #999;
+    padding: 10px;
+    background-color: #e8e8e8;
+    background-image: -moz-linear-gradient(#fafafa, #e8e8e8);
+    background-image: -webkit-linear-gradient(#fafafa, #e8e8e8);
+    background-image: linear-gradient(#fafafa, #e8e8e8);
+    background-repeat: repeat-x;
+}
+article .gist .gist-file .gist-meta a {
+    font-weight: bold;
+    color: #666;
+    text-decoration: none;
+}
+article .gist .gist-file .gist-data {
+    padding: 10px;
+    overflow: auto;
+    word-wrap: normal;
+    background-color: #f8f8ff;
+    border-bottom: 1px solid #ddd;
+    font-size: 100%;
+}
+article .gist .gist-file.scroll .gist-data {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 30px;
+    left: 0px;
+    overflow: scroll;
+}
+article .gist .gist-file.scroll .gist-meta {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+article .gist .gist-file .gist-data .line-data { padding: .5em !important }
+article .gist .gist-file .gist-data .line-pre {
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    background: transparent !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+article .gist .gist-file .gist-data .gist-highlight { background: transparent !important }
+article .gist .gist-file .gist-data .line-numbers {
+    background-color: #ececec;
+    color: #aaa;
+    border-right: 1px solid #ddd;
+    text-align: right;
+    padding: .5em;
+}
+article .gist .gist-file .gist-data .line-numbers .line-number {
+    clear: right;
+    display: block;
+}
+article .gist-syntax { background: #ffffff }
+article .gist-syntax .c {
+    color: #999988;
+    font-style: italic;
+}
+article .gist-syntax .err {
+    color: #a61717;
+    background-color: #e3d2d2;
+}
+article .gist-syntax .k {
+    color: #000000;
+    font-weight: bold;
+}
+article .gist-syntax .o {
+    color: #000000;
+    font-weight: bold;
+}
+article .gist-syntax .cm {
+    color: #999988;
+    font-style: italic;
+}
+article .gist-syntax .cp {
+    color: #999999;
+    font-weight: bold;
+}
+article .gist-syntax .c1 {
+    color: #999988;
+    font-style: italic;
+}
+article .gist-syntax .cs {
+    color: #999999;
+    font-weight: bold;
+    font-style: italic;
+}
+article .gist-syntax .gd {
+    color: #000000;
+    background-color: #fdd;
+}
+article .gist-syntax .gd .x {
+    color: #000000;
+    background-color: #faa;
+}
+article .gist-syntax .ge {
+    color: #000000;
+    font-style: italic;
+}
+article .gist-syntax .gr { color: #a00 }
+article .gist-syntax .gh { color: #999 }
+article .gist-syntax .gi {
+    color: #000000;
+    background-color: #dfd;
+}
+article .gist-syntax .gi .x {
+    color: #000000;
+    background-color: #afa;
+}
+article .gist-syntax .go { color: #888 }
+article .gist-syntax .gp { color: #555 }
+article .gist-syntax .gs { font-weight: bold }
+article .gist-syntax .gu { color: #aaa }
+article .gist-syntax .gt { color: #a00 }
+article .gist-syntax .kc {
+    color: #000000;
+    font-weight: bold;
+}
+article .gist-syntax .kd {
+    color: #000000;
+    font-weight: bold;
+}
+article .gist-syntax .kp {
+    color: #000000;
+    font-weight: bold;
+}
+article .gist-syntax .kr {
+    color: #000000;
+    font-weight: bold;
+}
+article .gist-syntax .kt {
+    color: #445588;
+    font-weight: bold;
+}
+article .gist-syntax .m { color: #099 }
+article .gist-syntax .s { color: #d14 }
+article .gist-syntax .na { color: teal }
+article .gist-syntax .nb { color: #0086b3 }
+article .gist-syntax .nc {
+    color: #445588;
+    font-weight: bold;
+}
+article .gist-syntax .no { color: teal }
+article .gist-syntax .ni { color: purple }
+article .gist-syntax .ne {
+    color: #990000;
+    font-weight: bold;
+}
+article .gist-syntax .nf {
+    color: #990000;
+    font-weight: bold;
+}
+article .gist-syntax .nn { color: #555 }
+article .gist-syntax .nt { color: #C6CFC1 }
+article .gist-syntax .p { color: #C6CFC1 }
+article .gist-syntax .nv { color: teal }
+article .gist-syntax .ow {
+    color: #000000;
+    font-weight: bold;
+}
+article .gist-syntax .w { color: #bbb }
+article .gist-syntax .mf { color: #099 }
+article .gist-syntax .mh { color: #099 }
+article .gist-syntax .mi { color: #AE7CFF }
+article .gist-syntax .mo { color: #099 }
+article .gist-syntax .sb { color: #d14 }
+article .gist-syntax .sc { color: #d14 }
+article .gist-syntax .sd { color: #d14 }
+article .gist-syntax .s2 { color: #d14 }
+article .gist-syntax .se { color: #d14 }
+article .gist-syntax .sh { color: #d14 }
+article .gist-syntax .si { color: #d14 }
+article .gist-syntax .sx { color: #d14 }
+article .gist-syntax .sr { color: #009926 }
+article .gist-syntax .s1 { color: #d14 }
+article .gist-syntax .ss { color: #990073 }
+article .gist-syntax .bp { color: #999 }
+article .gist-syntax .vc { color: teal }
+article .gist-syntax .vg { color: teal }
+article .gist-syntax .vi { color: teal }
+article .gist-syntax .il { color: #099 }

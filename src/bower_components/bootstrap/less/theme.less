@@ -5,8 +5,18 @@
 
 @import "variables.less";
 @import "mixins.less";
+body,html{background-color: @addon-background;}
+// Override container defaults
+.container {margin-left: 190px;margin-right: 0px;}
+// Override row defaults
+.row {padding: 20px;}
 
 
+
+
+
+// Sidebar styles
+// ==================================================
 .sidebar {
   position: fixed;
   left: 0;
@@ -15,24 +25,67 @@
   height: 100%;
   background-color: @addon-darkgray;
 }
-
 .sidebar ul {
   margin: 0;
   padding:0;
   list-style: none;
+  position: relative;
 }
-
+.sidebar ul li.header {
+  padding:20px;
+  height: auto;
+}
+.sidebar ul li.header:hover {background: none;}
+.sidebar ul li.header a {padding: 0}
+.sidebar ul li.header a img {
+  .box-shadow(0 1px 3px #000);
+  .border-radius(3px);
+}
 .sidebar ul li {
   color:@addon-darkgray-text;
-  font-size: 18px;
-  padding: 10px;
+  font-size: 16px;
   border-bottom: 1px solid @addon-darkgray-highlight;
+  text-align: right;
+  height: 50px;
+  line-height: 50px;
+}
+.sidebar ul li a {
+  padding: 0px 30px 0px 0px;
+  text-decoration: none;
+  color:@addon-darkgray-text;
 }
 .sidebar ul li:hover {
   cursor: pointer;
-  background-color: @brand-primary;
-
+  background-color: @addon-darkgray-hover;
+  .text-shadow(rgba(255,255,255,.35) 0 0 7px)
 }
-.sidebar ul li i {
+.sidebar ul li.active {
+  cursor: pointer;
+  background-color: @brand-primary;
+}
+.sidebar ul li a i {
   margin-right: 10px;
+}
+.sidebar .main {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: 10px
+}
+.sidebar .main a {
+  margin: 0 auto;
+}
+
+// ARTICLES AND CONTENT
+.article-content img {
+  border: 5px solid #fff;
+  .box-shadow(0 2px 5px rgba(0,0,0,0.25));
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+hr {
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #eee;
 }

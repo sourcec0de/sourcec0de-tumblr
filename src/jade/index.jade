@@ -7,6 +7,7 @@ html
        Bootstrap 
     link(href='/public/css/bootstrap.css', rel='stylesheet', media='screen')
     link(href='/public/css/theme.css', rel='stylesheet', media='screen')
+    link(href='/public/css/syntax.css', rel='stylesheet', media='screen')
     //-
        HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries 
     //if lt IE 9
@@ -15,19 +16,65 @@ html
   body
     .sidebar
       ul
+        li.header
+          a(href='/')
+            img(src="http://www.gravatar.com/avatar/17270c1c7ec7a9b8f9e474dedbcaa5d9?s=50")
         li 
-          i.icon-home
-          | Home
+          a(href="")
+            i.icon-home
+            | Home
         li 
-          i.icon-archive
-          | Archive
+          a(href="")
+            i.icon-archive
+            | Archive
         li
-          i.icon-envelope
-          | Contact Me
+          a(href="")
+            i.icon-user
+            | About Me
+        li
+          a(href="")
+            i.icon-envelope
+            | Contact
+        li
+          a(href="")
+            i.icon-envelope
+            | Projects
+      .main
+        a.btn.btn-primary.btn-block(href="//github.com/sourcec0de")
+          i.icon-github
+          |  View my Github
+
     .container
+      .row.header
+        .col-md-9
+          .row
+            .col-md-6
+              h1 SourceC0de
+            .col-md-3.col-md-offset-3
+              .search
+                .input-group.input-group-lg
+                  input.form-control.input-lg(type='text', placeholder='Search')
+                  span.input-group-addon
+                    i.icon-search
+          hr
+
+
       .row
-        .jumbotron
-          h1 Hello, world!
+        .col-md-9
+          article.text.advanced
+            h2 Title
+              script(src='https://gist.github.com/sourcec0de/3cd88025141004a9cb14.js')
+          article.photo
+            .article-content
+              a(href='http://cobalt-theme.pixelunion.net/image/6082173781')
+                img(src='http://31.media.tumblr.com/tumblr_lm4qdiuejD1qkbvbmo1_1280.jpg', alt='')
+            footer
+              ul.meta
+                li.day
+                  a(href='http://cobalt-theme.pixelunion.net/post/6082173781') 01/06/11
+                li.notes
+                  a(href='http://cobalt-theme.pixelunion.net/post/6082173781#post-notes') 21 notes
+
     //-
        jQuery (necessary for Bootstrap's JavaScript plugins) 
     script(src='//code.jquery.com/jquery.js')

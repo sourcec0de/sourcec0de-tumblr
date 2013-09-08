@@ -1118,7 +1118,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    max-width: 1170px;
+    max-width: 130%;
   }
   .col-lg-1,
   .col-lg-2,
@@ -2256,6 +2256,8 @@ a [class*=" icon-"] {
 .icon-border {
   border: solid 1px #eeeeee;
   padding: .2em .25em .15em;
+  -webkit-border-top-left-radius: 3px;
+  -moz-border-top-left-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -2265,6 +2267,8 @@ a [class*=" icon-"] {
 }
 .icon-2x.icon-border {
   border-width: 2px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-top-left-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -2274,6 +2278,8 @@ a [class*=" icon-"] {
 }
 .icon-3x.icon-border {
   border-width: 3px;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -2283,6 +2289,8 @@ a [class*=" icon-"] {
 }
 .icon-4x.icon-border {
   border-width: 4px;
+  -webkit-border-top-left-radius: 6px;
+  -moz-border-top-left-radius: 6px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -2292,6 +2300,8 @@ a [class*=" icon-"] {
 }
 .icon-5x.icon-border {
   border-width: 5px;
+  -webkit-border-top-left-radius: 7px;
+  -moz-border-top-left-radius: 7px;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;

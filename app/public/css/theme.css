@@ -1,3 +1,14 @@
+body,
+html {
+  background-color: #e7e7e7;
+}
+.container {
+  margin-left: 190px;
+  margin-right: 0px;
+}
+.row {
+  padding: 20px;
+}
 .sidebar {
   position: fixed;
   left: 0;
@@ -10,17 +21,69 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  position: relative;
+}
+.sidebar ul li.header {
+  padding: 20px;
+  height: auto;
+}
+.sidebar ul li.header:hover {
+  background: none;
+}
+.sidebar ul li.header a {
+  padding: 0;
+}
+.sidebar ul li.header a img {
+  -webkit-box-shadow: 0 1px 3px #000000;
+  box-shadow: 0 1px 3px #000000;
+  border-radius: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -moz-border-top-left-radius: 3px;
 }
 .sidebar ul li {
   color: #cccccc;
-  font-size: 18px;
-  padding: 10px;
+  font-size: 16px;
   border-bottom: 1px solid #2a2a2a;
+  text-align: right;
+  height: 50px;
+  line-height: 50px;
+}
+.sidebar ul li a {
+  padding: 0px 30px 0px 0px;
+  text-decoration: none;
+  color: #cccccc;
 }
 .sidebar ul li:hover {
   cursor: pointer;
+  background-color: #2d2d2d;
+  text-shadow: rgba(255, 255, 255, 0.35) 0 0 7px;
+  -webkit-text-shadow: rgba(255, 255, 255, 0.35) 0 0 7px;
+}
+.sidebar ul li.active {
+  cursor: pointer;
   background-color: #3093e3;
 }
-.sidebar ul li i {
+.sidebar ul li a i {
   margin-right: 10px;
+}
+.sidebar .main {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+.sidebar .main a {
+  margin: 0 auto;
+}
+.article-content img {
+  border: 5px solid #fff;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  max-width: 100%;
+  box-sizing: border-box;
+}
+hr {
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #eee;
 }
